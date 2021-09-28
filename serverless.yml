@@ -1,0 +1,13 @@
+service: sample-serverless-api
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  - ${file(src/api/information/functions.yml)}
+
+plugins:
+  - serverless-offline

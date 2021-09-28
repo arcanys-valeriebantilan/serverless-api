@@ -1,0 +1,6 @@
+information:
+  handler: src/api/information/information.hello
+  events:
+    - http:
+        path: hello
+        method: get
