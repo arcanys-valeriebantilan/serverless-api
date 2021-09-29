@@ -1,5 +1,5 @@
 information:
-  handler: src/api/information/information.get
+  handler: ${self:custom.functionPath}/information/getInformation/getInformation.get
   events:
     - http:
         path: information
